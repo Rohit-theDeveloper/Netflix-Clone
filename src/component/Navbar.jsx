@@ -1,7 +1,9 @@
 import React from "react";
-import bgimage from "../assets/banner.jpeg";
+import bgimage from "../assets/bgimage1.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate()
   return (
     <>
       <div className=" relative  w-full">
@@ -9,7 +11,7 @@ export default function Navbar() {
           className="absolute inset-0 bg-cover bg-center opacity-30 z-0 text-white p-4 shadow-[0_8px_20px_rgba(0,0,255,0.6)]"
           style={{ backgroundImage: `url(${bgimage})` }}
         ></div>
-        <div className="relative z-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 text-white">
+        <div className="relative z-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 text-white pb-10">
           <div className=" w-xl-full flex justify-between items-center py-4">
             <div className="text-3xl sm:text-2xl md:text-4xl lg:text-6xl text-red-600 font-bold  tracking-widest">
               NETFLIX
@@ -19,7 +21,7 @@ export default function Navbar() {
                 <option className=" bg-white text-black">English</option>
                 <option className="bg-white text-black">Hindi</option>
               </select>
-              <button className="bg-red-600 p-1 rounded font-bold px-3 sm:p-2">
+              <button className="bg-red-600 p-1 rounded font-bold px-3 sm:p-2 hover:cursor-pointer" onClick={() => navigate('/login')}>
                 Sign in
               </button>
             </div>
