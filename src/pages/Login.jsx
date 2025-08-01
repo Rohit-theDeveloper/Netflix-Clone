@@ -1,10 +1,11 @@
 import React from "react";
 import bgimage from "../assets/bgimage1.jpg"; 
+import Footer from "../component/Footer";
 
 export default function Login() {
   return (
     <>
-      <div className="relative w-full">
+      <div className="relative w-full bg-red-500">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30 z-0 text-white p-4 "
           style={{ backgroundImage: `url(${bgimage})`,opacity: 0.4 }}
@@ -40,7 +41,7 @@ export default function Login() {
                   <div className="w-full p-2  font-bold flex justify-center items-center border  border-gray-300 rounded text-white mb-5 ">
                     Use a Sign-In-Code
                   </div>
-                  <div className="w-full font-bold flex justify-center items-center text-white underline mb-5">
+                  <div className="w-full font-bold flex justify-center items-center text-white underline">
                     {" "}
                     <a href="##">Forget Password</a>
                   </div>
@@ -57,7 +58,7 @@ export default function Login() {
                     <span className="text-gray-500">New to Netlix?</span>Sign up
                     now
                   </p>
-                  <p className="text-gray-500 mb-5">
+                  <p className="text-gray-500">
                     This page is protected by Google reCAPTCHA to ensure you're
                     not a bot
                   </p>
@@ -70,6 +71,10 @@ export default function Login() {
           </div>
         </div>
       </div>
+      <Footer/>
+
+      
+    
     </>
   );
 }

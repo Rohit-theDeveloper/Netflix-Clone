@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <div className=" relative  w-full">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30 z-0 text-white p-4 shadow-[0_8px_20px_rgba(0,0,255,0.6)]"
+          className="absolute  inset-0 bg-cover bg-center opacity-30 z-0 text-white p-4 shadow-[0_10px_30px_rgba(0,0,255,0.6)] rounded-b-[5%]"
           style={{ backgroundImage: `url(${bgimage})` }}
         ></div>
         <div className="relative z-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 text-white pb-10">

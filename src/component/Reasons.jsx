@@ -31,10 +31,10 @@ export default function Reasons() {
     <>
       <div className=" mt-10 md:px-20 px-6">
         <h1 className="text-2xl font-bold text-white">More Reasons to join</h1>
-        <div className="flex flex-col lg:flex-row lg:gap-5">
+        <div className="flex flex-col md:grid md:grid-cols-2  lg:flex lg:flex-row  xl:flex-row gap-5">
           {reasons.map(({ tittle, para, icon }) => (
             <div
-              className="bg-gradient-to-b from-blue-950 to-gray-900 p-3 rounded-2xl mt-5 md:w-[300px] md:h-[320px] h-[250px] w-auto relative"
+              className="bg-gradient-to-b from-blue-950 to-gray-900 p-3 rounded-2xl mt-5 md:w-[1/2] md:h-[350px]  lg:w-[300px] lg:h-[300px] h-[250px] w-auto relative"
             >
               <h1 className="text-2xl font-bold mb-3">{tittle}</h1>
               <p className="text-gray-500">{para}</p>
